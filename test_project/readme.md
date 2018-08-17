@@ -15,7 +15,7 @@ _(using aldryn_newsblog v. 2.1.1):_
 1. Add Google maps plugin (it`s template using sekizai tags)
 1. Try to save.
 
-#In current project
+# In current project
 1. This repository already has enabled `ALDRYN_NEWSBLOG_UPDATE_SEARCH_DATA_ON_SAVE` and has an article with Google maps plugin.
 1. Just create a superuser via `python manage.py createsuperuser`
 1. Move to article (`http://localhost:8000/en/article/`)
