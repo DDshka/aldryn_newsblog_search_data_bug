@@ -1,13 +1,13 @@
-#Introduction
+# Introduction
 Aldryn_newsblog gets all plugins inside article content placeholder and renders them programatically. 
 As they are rendered application clears content from html tags and adds it to field 'search_data' of Article model.
 
-#The problem
+# The problem
 To render a plugin the application actually simulates circumstances to render it. 
 So they need a request and its context. 
 **But aldryn_newsblog uses default context without any processing according to our settings.** In this case, all plugins which depend on our context processors, which add additional info to context, just cant be rendered.
 
-#To see the bug 
+# To see the bug 
 _(using aldryn_newsblog v. 2.1.1):_
 
 1. In application settings enable search data upadting with: `ALDRYN_NEWSBLOG_UPDATE_SEARCH_DATA_ON_SAVE = True`
